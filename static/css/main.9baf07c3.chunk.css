@@ -1,0 +1,2 @@
+*{box-sizing:border-box;margin:0}.box{display:grid;grid-template-columns:repeat(3,1fr);grid-row:2/6;grid-column:4/10}.container{width:100vw;height:100vh;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(6,1fr)}.container,button{background-color:#000015}button{font-size:2em;border:1px solid #fff}.msg{font-size:1.5em;position:absolute;left:45%;top:10%;color:#fff}
+/*# sourceMappingURL=main.9baf07c3.chunk.css.map */
