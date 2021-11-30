@@ -3239,35 +3239,35 @@ function App() {
   let youLose = useEffect(() => {
     //diagonale
     if (c1 == "0" && c5 == "0" && c9 == "0") {
-      setMsg("Ai pierdut 🤣🤣🤣");
+      setMsg("Ai pierdut");
     }
     if (c3 == "0" && c5 == "0" && c7 == "0") {
-      setMsg("Ai pierdut 🤣🤣🤣");
+      setMsg("Ai pierdut");
     }
 
     //primul rand
     if (c1 == "0" && c2 == "0" && c3 == "0") {
-      setMsg("Ai pierdut 🤣🤣🤣");
+      setMsg("Ai pierdut");
     }
     //al doilea rand
     if (c4 == "0" && c5 == "0" && c6 == "0") {
-      setMsg("Ai pierdut 🤣🤣🤣");
+      setMsg("Ai pierdut");
     }
     //al treilea rand
     if (c7 == "0" && c8 == "0" && c9 == "0") {
-      setMsg("Ai pierdut 🤣🤣🤣");
+      setMsg("Ai pierdut");
     }
     //prima coloana
     if (c1 == "0" && c4 == "0" && c7 == "0") {
-      setMsg("Ai pierdut 🤣🤣🤣");
+      setMsg("Ai pierdut");
     }
     // a doua coloana
     if (c2 == "0" && c5 == "0" && c8 == "0") {
-      setMsg("Ai pierdut 🤣🤣🤣");
+      setMsg("Ai pierdut");
     }
     // a treia coloana
     if (c3 == "0" && c6 == "0" && c9 == "0") {
-      setMsg("Ai pierdut 🤣🤣🤣");
+      setMsg("Ai pierdut");
     }
   });
 
@@ -3851,19 +3851,37 @@ function App() {
   let box = (
     <div className="container">
       <div className="box">
-        <button onClick={() => setC1("X")} disabled={d1}>
+        <button
+          style={{ color: "#180561" }}
+          onClick={() => setC1("X")}
+          disabled={d1}
+        >
           {c1}
         </button>
-        <button onClick={() => setC2("X")} disabled={d2}>
+
+        <button
+          style={{ color: "#4408e9" }}
+          onClick={() => setC2("X")}
+          disabled={d2}
+        >
           {c2}
         </button>
-        <button onClick={() => setC3("X")} disabled={d3}>
+        <button
+          style={{ color: "#8B008B" }}
+          onClick={() => setC3("X")}
+          disabled={d3}
+        >
           {c3}
         </button>
-        <button onClick={() => setC4("X")} disabled={d4}>
+        <button
+          style={{ color: "#4408e9" }}
+          onClick={() => setC4("X")}
+          disabled={d4}
+        >
           {c4}
         </button>
         <button
+          style={{ color: "#8B008B" }}
           disabled={d5}
           onClick={() => {
             c5 == "0" ? setC5(0) : setC5("X");
@@ -3871,21 +3889,38 @@ function App() {
         >
           {c5}{" "}
         </button>
-        <button onClick={() => setC6("X")} disabled={d6}>
+        <button
+          style={{ color: "#00ffff" }}
+          onClick={() => setC6("X")}
+          disabled={d6}
+        >
           {c6}
         </button>
-        <button onClick={() => setC7("X")} disabled={d7}>
+        <button
+          style={{ color: "#8B008B" }}
+          onClick={() => setC7("X")}
+          disabled={d7}
+        >
           {c7}
         </button>
-        <button onClick={() => setC8("X")} disabled={d8}>
+        <button
+          style={{ color: "#00ffff" }}
+          onClick={() => setC8("X")}
+          disabled={d8}
+        >
           {c8}{" "}
         </button>
-        <button onClick={() => setC9("X")} disabled={d9}>
+        <button
+          style={{ color: "#00a8f3" }}
+          onClick={() => setC9("X")}
+          disabled={d9}
+        >
           {c9}
         </button>
       </div>
       <div className="reset">
         <button
+          style={{ color: "white", border: "1px solid white" ,margin:"1vw"}}
           onClick={() => {
             setC1("");
             setC2("");

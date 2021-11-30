@@ -6,7 +6,7 @@
 .box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 2px solid black;
+  /* border: 1px solid white; */
 
   grid-row: 2/6;
 
@@ -19,16 +19,19 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);
+  background-color: #000015;
 }
 
 button {
   font-size: 2em;
-  color: black;
-  background-color: white;
+
+  background-color: #000015;
+  border: 1px solid white;
 }
 .msg {
   font-size: 1.5em;
   position: absolute;
   left: 45%;
   top: 10%;
+  color: white;
 }
